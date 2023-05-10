@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/bookNow.css" />
+    <script defer src="../js/book-now.js"></script>
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-main">
+          <li>
+            <a class="btn-primary" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="btn-primary" href="./show-now.html">Show Now</a>
+          </li>
+          <li><a class="btn-primary" href="./booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro-section">
+      <h1>Booking</h1>
+      <span id="alert-msg"
+        >Make sure you also confirm these changes and book seats when all
+        done.</span
+      >
+      <div class="main-form">
+        <form action="#" method="POST">
+          <div class="form-control">
+            <label for="movies">Select a movie:</label>
+            <select id="movies">
+              <option disabled selected value>Select an option</option>
+              <option value="350">Bahubali</option>
+              <option value="280">Spiderman</option>
+              <option value="370">Fast X</option>
+              <option value="310">Dragon</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <span>Select your seats: </span>
+            <div class="form-control--checkbox">
+              <label for="seat1">Seat 1</label>
+              <input type="checkbox" id="seat1" name="seat2" value="true" />
+            </div>
+
+            <div class="form-control--checkbox">
+              <label for="seat2">Seat 2</label>
+              <input type="checkbox" id="seat2" name="seat3" value="seat3" />
+            </div>
+
+            <div class="form-control--checkbox">
+              <label for="seat3">Seat 3</label>
+              <input type="checkbox" id="seat3" name="seat4" value="seat4" />
+            </div>
+
+            <div class="form-control--checkbox">
+              <label for="seat1">Seat 4</label>
+              <input type="checkbox" id="seat4" name="seat5" value="seat5" />
+            </div>
+
+            <div class="form-control--checkbox">
+              <label for="seat1">Seat 5</label>
+              <input type="checkbox" id="seat5" name="seat1" value="seat1" />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="registration-id">Registration ID:</label>
+            <input
+              type="text"
+              id="registration-id"
+              name="registration-id"
+              pattern="[0-9]{2}[A-Z]{2}[0-9]{4}"
+              placeholder="23WP0001"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              pattern="[^0-9]+"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.*\s).{8,}"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="mobile">Mobile:</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter your mobile number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div class="form-control form-control--last-child">
+            <label for="dob">DOB:</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              placeholder="Enter your date of birth"
+              required
+            />
+          </div>
+
+          <aside>
+            <p id="booked-price">Total: 0</p>
+          </aside>
+
+          <div class="form-control form-btns">
+            <button type="submit">Book</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made by Abhinav Maindre. Copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>
