@@ -8,7 +8,7 @@ const alertMsg = document.getElementById("alert-msg");
 const bookedPriceEle = document.getElementById("booked-price");
 const totalPriceEle = document.getElementById("booked-price");
 
-let gotMoviePrice = 0;
+let gotMoviePrice = 120;
 let totalPrice = 0;
 
 // Register event listener: Change checkbox colors
@@ -16,9 +16,9 @@ seat1Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } else {
-    totalPrice -= gotMoviePrice;
-  }
+  // } else {
+  //   totalPrice -= gotMoviePrice;
+  // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
   showAlertMsg(true);
 });
@@ -26,9 +26,9 @@ seat2Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } else {
-    totalPrice -= gotMoviePrice;
-  }
+   }// else {
+  //   totalPrice -= gotMoviePrice;
+  // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
   showAlertMsg(true);
 });
@@ -36,9 +36,9 @@ seat3Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } else {
-    totalPrice -= gotMoviePrice;
-  }
+   }// else {
+  //   totalPrice -= gotMoviePrice;
+  // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
   showAlertMsg(true);
 });
@@ -46,9 +46,9 @@ seat4Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } else {
-    totalPrice -= gotMoviePrice;
-  }
+  } //else {
+  //   totalPrice -= gotMoviePrice;
+  // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
   showAlertMsg(true);
 });
@@ -56,9 +56,10 @@ seat5Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } else {
-    totalPrice -= gotMoviePrice;
-  }
+  } 
+  // else {
+  //   totalPrice -= gotMoviePrice;
+  // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
   showAlertMsg(true);
 });
