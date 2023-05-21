@@ -108,6 +108,7 @@ select {
   display: flex;
   gap: 25px;
   margin-bottom: 50px;
+  color: #222;
 }
 
 .main-form label,
@@ -159,7 +160,7 @@ button:hover {
 
 #booked-price {
   text-align: center;
-  color: white;
+  color: #222;
   text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 24px;
