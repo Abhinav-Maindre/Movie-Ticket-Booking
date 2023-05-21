@@ -16,17 +16,18 @@ seat1Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  // } else {
-  //   totalPrice -= gotMoviePrice;
-  // }
-  totalPriceEle.innerHTML = `Total: ${totalPrice}`;
-  showAlertMsg(true);
+    // } else {
+    //   totalPrice -= gotMoviePrice;
+    // }
+    totalPriceEle.innerHTML = `Total: ${totalPrice}`;
+    showAlertMsg(true);
+  }
 });
 seat2Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-   }// else {
+  } // else {
   //   totalPrice -= gotMoviePrice;
   // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
@@ -36,7 +37,7 @@ seat3Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-   }// else {
+  } // else {
   //   totalPrice -= gotMoviePrice;
   // }
   totalPriceEle.innerHTML = `Total: ${totalPrice}`;
@@ -56,7 +57,7 @@ seat5Checkbox.addEventListener("click", (event) => {
   event.target.classList.toggle("active-checkbox");
   if (event.target.classList.contains("active-checkbox")) {
     totalPrice += gotMoviePrice;
-  } 
+  }
   // else {
   //   totalPrice -= gotMoviePrice;
   // }
